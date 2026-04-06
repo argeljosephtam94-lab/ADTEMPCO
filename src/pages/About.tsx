@@ -69,6 +69,9 @@ const About = () => {
                   alt="ADTEMPCO Logo" 
                   className="h-20 w-auto object-contain"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://placehold.co/400x400/1D8D44/white?text=ADTEMPCO";
+                  }}
                 />
               </div>
             </motion.div>

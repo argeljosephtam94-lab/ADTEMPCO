@@ -90,6 +90,9 @@ const Hero = () => {
                 alt="ADTEMPCO Logo" 
                 className="h-16 w-auto object-contain"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  e.currentTarget.src = "https://placehold.co/400x400/1D8D44/white?text=ADTEMPCO";
+                }}
               />
             </div>
             <div className="absolute -top-6 -right-20 bg-brand-green p-4 rounded-2xl shadow-xl z-20 animate-bounce-slow delay-150">

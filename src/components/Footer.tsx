@@ -15,6 +15,9 @@ const Footer = () => {
                   alt="ADTEMPCO Logo" 
                   className="h-full w-auto object-contain"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://placehold.co/400x400/1D8D44/white?text=ADTEMPCO";
+                  }}
                 />
               </div>
             </Link>
