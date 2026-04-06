@@ -3,6 +3,8 @@
 
 @theme {
   --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-green: #1D8D44;
+  --color-brand-blue: #2A5699;
 }
 
 @layer base {
@@ -34,6 +36,6 @@
     @apply bg-gray-100 rounded-full;
   }
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    @apply bg-blue-200 rounded-full hover:bg-blue-300 transition-colors;
+    @apply bg-brand-green/30 rounded-full hover:bg-brand-green/50 transition-colors;
   }
 }

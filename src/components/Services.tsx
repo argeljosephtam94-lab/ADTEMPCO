@@ -7,17 +7,17 @@ const services = [
     title: "Coopmart (Retail)",
     description: "Your community grocery providing fresh produce and daily essentials at fair prices.",
     icon: ShoppingBag,
-    color: "bg-blue-600",
-    lightColor: "bg-blue-50",
-    textColor: "text-blue-600",
+    color: "bg-brand-green",
+    lightColor: "bg-brand-green/10",
+    textColor: "text-brand-green",
   },
   {
     title: "Hospitality",
     description: "Comfortable lodging and event spaces designed for travelers and community gatherings.",
     icon: Bed,
-    color: "bg-green-600",
-    lightColor: "bg-green-50",
-    textColor: "text-green-600",
+    color: "bg-brand-blue",
+    lightColor: "bg-brand-blue/10",
+    textColor: "text-brand-blue",
   },
   {
     title: "Coca-Cola Distribution",
@@ -31,17 +31,17 @@ const services = [
     title: "Business Services",
     description: "From printing to logistics, we support local entrepreneurs with professional tools.",
     icon: Briefcase,
-    color: "bg-yellow-500",
-    lightColor: "bg-yellow-50",
-    textColor: "text-yellow-600",
+    color: "bg-brand-blue",
+    lightColor: "bg-brand-blue/10",
+    textColor: "text-brand-blue",
   },
   {
     title: "Product Brands",
     description: "Locally made products that showcase the craftsmanship and quality of our community.",
     icon: Tag,
-    color: "bg-purple-600",
-    lightColor: "bg-purple-50",
-    textColor: "text-purple-600",
+    color: "bg-brand-green",
+    lightColor: "bg-brand-green/10",
+    textColor: "text-brand-green",
   }
 ];
 
@@ -54,7 +54,7 @@ const Services = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-4"
+            className="text-sm font-bold text-brand-green uppercase tracking-[0.2em] mb-4"
           >
             Our Ecosystem
           </motion.h2>
@@ -63,7 +63,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6"
+            className="text-4xl md:text-5xl font-extrabold text-brand-green mb-6"
           >
             Essential Services for Every Need
           </motion.h3>

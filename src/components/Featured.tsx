@@ -39,7 +39,7 @@ const Featured = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-sm font-bold text-green-600 uppercase tracking-[0.2em] mb-4"
+              className="text-sm font-bold text-brand-green uppercase tracking-[0.2em] mb-4"
             >
               Our Enterprises
             </motion.h2>
@@ -48,7 +48,7 @@ const Featured = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-4xl md:text-5xl font-extrabold text-blue-900"
+              className="text-4xl md:text-5xl font-extrabold text-brand-blue"
             >
               Showcasing Our <br /> Business Ecosystem
             </motion.h3>
@@ -60,7 +60,7 @@ const Featured = () => {
           >
             <Link 
               to="/services" 
-              className="inline-flex items-center text-blue-600 font-bold hover:text-blue-700 transition-colors group"
+              className="inline-flex items-center text-brand-green font-bold hover:text-brand-blue transition-colors group"
             >
               View All Enterprises
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -86,13 +86,13 @@ const Featured = () => {
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-white/90 backdrop-blur-md text-blue-900 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">
+                  <span className="bg-white/90 backdrop-blur-md text-brand-blue px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">
                     {item.category}
                   </span>
                 </div>
               </div>
               <div className="p-6">
-                <h4 className="text-xl font-bold text-blue-900 mb-2">{item.name}</h4>
+                <h4 className="text-xl font-bold text-brand-blue mb-2">{item.name}</h4>
                 <p className="text-sm text-gray-500 leading-relaxed">
                   {item.description}
                 </p>

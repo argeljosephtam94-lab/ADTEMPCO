@@ -10,7 +10,7 @@ const About = () => {
       className="bg-white"
     >
       {/* Header */}
-      <section className="bg-blue-900 py-24 text-white relative overflow-hidden">
+      <section className="bg-brand-green py-24 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:40px_40px]"></div>
         </div>
@@ -22,7 +22,7 @@ const About = () => {
           >
             Our Story
           </motion.h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-green-50 max-w-2xl mx-auto leading-relaxed">
             Serving communities with heart. Discover the journey of ADTEMPCO and our commitment to cooperative excellence.
           </p>
         </div>
@@ -37,8 +37,8 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-4">The Beginning</h2>
-              <h3 className="text-4xl font-extrabold text-blue-900 mb-8">A Journey of Community Empowerment</h3>
+              <h2 className="text-sm font-bold text-brand-blue uppercase tracking-[0.2em] mb-4">The Beginning</h2>
+              <h3 className="text-4xl font-extrabold text-brand-green mb-8">A Journey of Community Empowerment</h3>
               <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
                 <p>
                   ADTEMPCO started with a simple vision: to create a self-sustaining ecosystem where community members could support one another through shared enterprises and financial services.
@@ -63,8 +63,13 @@ const About = () => {
                 className="rounded-[3rem] shadow-2xl border-8 border-gray-50"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute -bottom-10 -right-10 bg-yellow-400 p-10 rounded-3xl shadow-2xl hidden md:block">
-                <Heart className="h-12 w-12 text-blue-900" />
+              <div className="absolute -bottom-10 -right-10 bg-white p-6 rounded-3xl shadow-2xl hidden md:block border border-gray-100">
+                <img 
+                  src="https://storage.googleapis.com/ai-studio-static/adtempco-logo.png" 
+                  alt="ADTEMPCO Logo" 
+                  className="h-20 w-auto object-contain"
+                  referrerPolicy="no-referrer"
+                />
               </div>
             </motion.div>
           </div>
@@ -81,10 +86,10 @@ const About = () => {
               viewport={{ once: true }}
               className="bg-white p-12 rounded-[3rem] shadow-xl border border-gray-100"
             >
-              <div className="bg-blue-100 p-4 rounded-2xl w-fit mb-8">
-                <Target className="h-8 w-8 text-blue-600" />
+              <div className="bg-brand-green/10 p-4 rounded-2xl w-fit mb-8">
+                <Target className="h-8 w-8 text-brand-green" />
               </div>
-              <h4 className="text-3xl font-bold text-blue-900 mb-6">Our Mission</h4>
+              <h4 className="text-3xl font-bold text-brand-green mb-6">Our Mission</h4>
               <p className="text-gray-600 leading-relaxed text-lg">
                 To foster community stability through accessible financial services, responsible savings, and local enterprise growth, ensuring that every member has the opportunity to thrive.
               </p>
@@ -96,10 +101,10 @@ const About = () => {
               transition={{ delay: 0.1 }}
               className="bg-white p-12 rounded-[3rem] shadow-xl border border-gray-100"
             >
-              <div className="bg-green-100 p-4 rounded-2xl w-fit mb-8">
-                <Eye className="h-8 w-8 text-green-600" />
+              <div className="bg-brand-green/10 p-4 rounded-2xl w-fit mb-8">
+                <Eye className="h-8 w-8 text-brand-green" />
               </div>
-              <h4 className="text-3xl font-bold text-blue-900 mb-6">Our Vision</h4>
+              <h4 className="text-3xl font-bold text-brand-green mb-6">Our Vision</h4>
               <p className="text-gray-600 leading-relaxed text-lg">
                 To be the leading community-centered enterprise in the region, recognized for our heart-driven service and our contribution to a sustainable and prosperous local economy.
               </p>
@@ -111,8 +116,8 @@ const About = () => {
       {/* Leadership */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-4">Leadership</h2>
-          <h3 className="text-4xl font-extrabold text-blue-900 mb-16">The Heart Behind the Vision</h3>
+          <h2 className="text-sm font-bold text-brand-green uppercase tracking-[0.2em] mb-4">Leadership</h2>
+          <h3 className="text-4xl font-extrabold text-brand-green mb-16">The Heart Behind the Vision</h3>
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[1, 2, 3, 4].map((i) => (

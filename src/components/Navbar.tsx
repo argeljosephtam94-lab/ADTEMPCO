@@ -19,13 +19,14 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-blue-600 p-2 rounded-lg">
-              <Heart className="h-6 w-6 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-blue-900 leading-none tracking-tight">ADTEMPCO</span>
-              <span className="text-[10px] font-medium text-green-600 uppercase tracking-widest">Enterprises</span>
+          <Link to="/" className="flex items-center space-x-3">
+            <div className="h-16 w-auto">
+              <img 
+                src="https://storage.googleapis.com/ai-studio-static/adtempco-logo.png" 
+                alt="ADTEMPCO Logo" 
+                className="h-full w-auto object-contain"
+                referrerPolicy="no-referrer"
+              />
             </div>
           </Link>
 
@@ -36,8 +37,8 @@ const Navbar = () => {
                 key={link.name}
                 to={link.path}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-blue-600",
-                  location.pathname === link.path ? "text-blue-600" : "text-gray-600"
+                  "text-sm font-semibold transition-colors hover:text-brand-green",
+                  location.pathname === link.path ? "text-brand-green" : "text-gray-600"
                 )}
               >
                 {link.name}
@@ -45,7 +46,7 @@ const Navbar = () => {
             ))}
             <Link
               to="/contact"
-              className="bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"
+              className="bg-brand-green text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-brand-blue transition-all shadow-lg shadow-green-100"
             >
               Become a Member
             </Link>
@@ -74,7 +75,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className={cn(
                   "block px-3 py-3 rounded-md text-base font-medium",
-                  location.pathname === link.path ? "bg-blue-50 text-blue-600" : "text-gray-600 hover:bg-gray-50"
+                  location.pathname === link.path ? "bg-brand-green/10 text-brand-green" : "text-gray-600 hover:bg-gray-50"
                 )}
               >
                 {link.name}
@@ -83,7 +84,7 @@ const Navbar = () => {
             <Link
               to="/contact"
               onClick={() => setIsOpen(false)}
-              className="block w-full text-center bg-blue-600 text-white px-6 py-3 rounded-md text-base font-semibold"
+              className="block w-full text-center bg-brand-green text-white px-6 py-3 rounded-md text-base font-bold"
             >
               Become a Member
             </Link>

@@ -10,9 +10,9 @@ const Contact = () => {
       className="bg-white"
     >
       {/* Header */}
-      <section className="bg-yellow-400 py-24 text-blue-900 relative overflow-hidden">
+      <section className="bg-brand-green py-24 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:40px_40px]"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:40px_40px]"></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <motion.h1 
@@ -22,7 +22,7 @@ const Contact = () => {
           >
             Get in Touch
           </motion.h1>
-          <p className="text-xl text-blue-900/80 max-w-2xl mx-auto leading-relaxed font-medium">
+          <p className="text-xl text-green-50 max-w-2xl mx-auto leading-relaxed font-medium">
             Have questions about our services or want to become a member? We're here to help you with an open heart.
           </p>
         </div>
@@ -46,31 +46,31 @@ const Contact = () => {
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="bg-blue-100 p-3 rounded-xl">
-                      <MapPin className="h-6 w-6 text-blue-600" />
+                    <div className="bg-brand-green/10 p-3 rounded-xl">
+                      <MapPin className="h-6 w-6 text-brand-green" />
                     </div>
                     <div>
-                      <p className="font-bold text-blue-900">Main Office</p>
+                      <p className="font-bold text-brand-blue">Main Office</p>
                       <p className="text-gray-600">Bangued, Abra, Philippines</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <div className="bg-green-100 p-3 rounded-xl">
-                      <Phone className="h-6 w-6 text-green-600" />
+                    <div className="bg-brand-green/10 p-3 rounded-xl">
+                      <Phone className="h-6 w-6 text-brand-green" />
                     </div>
                     <div>
-                      <p className="font-bold text-blue-900">Phone</p>
+                      <p className="font-bold text-brand-blue">Phone</p>
                       <p className="text-gray-600">+63 (XXX) XXX-XXXX</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <div className="bg-yellow-100 p-3 rounded-xl">
-                      <Mail className="h-6 w-6 text-yellow-600" />
+                    <div className="bg-brand-green/10 p-3 rounded-xl">
+                      <Mail className="h-6 w-6 text-brand-green" />
                     </div>
                     <div>
-                      <p className="font-bold text-blue-900">Email</p>
+                      <p className="font-bold text-brand-blue">Email</p>
                       <p className="text-gray-600">info@adtempco.org</p>
                     </div>
                   </div>
@@ -78,15 +78,15 @@ const Contact = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-blue-900 mb-6">Follow Us</h3>
+                <h3 className="text-xl font-bold text-brand-blue mb-6">Follow Us</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="bg-gray-100 p-4 rounded-2xl hover:bg-blue-600 hover:text-white transition-all">
+                  <a href="#" className="bg-gray-100 p-4 rounded-2xl hover:bg-brand-green hover:text-white transition-all">
                     <Facebook className="h-6 w-6" />
                   </a>
-                  <a href="#" className="bg-gray-100 p-4 rounded-2xl hover:bg-blue-600 hover:text-white transition-all">
+                  <a href="#" className="bg-gray-100 p-4 rounded-2xl hover:bg-brand-green hover:text-white transition-all">
                     <Twitter className="h-6 w-6" />
                   </a>
-                  <a href="#" className="bg-gray-100 p-4 rounded-2xl hover:bg-blue-600 hover:text-white transition-all">
+                  <a href="#" className="bg-gray-100 p-4 rounded-2xl hover:bg-brand-green hover:text-white transition-all">
                     <Instagram className="h-6 w-6" />
                   </a>
                 </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                     <input 
                       type="text" 
                       placeholder="John Doe"
-                      className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:ring-2 focus:ring-blue-600 outline-none transition-all"
+                      className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:ring-2 focus:ring-brand-green outline-none transition-all"
                     />
                   </div>
                   <div className="space-y-2">
@@ -115,14 +115,14 @@ const Contact = () => {
                     <input 
                       type="email" 
                       placeholder="john@example.com"
-                      className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:ring-2 focus:ring-blue-600 outline-none transition-all"
+                      className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:ring-2 focus:ring-brand-green outline-none transition-all"
                     />
                   </div>
                 </div>
                 
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-gray-700 ml-1">Subject</label>
-                  <select className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:ring-2 focus:ring-blue-600 outline-none transition-all appearance-none">
+                  <select className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:ring-2 focus:ring-brand-green outline-none transition-all appearance-none">
                     <option>General Inquiry</option>
                     <option>Membership Application</option>
                     <option>Business Partnership</option>
@@ -135,11 +135,11 @@ const Contact = () => {
                   <textarea 
                     rows={5}
                     placeholder="How can we help you today?"
-                    className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:ring-2 focus:ring-blue-600 outline-none transition-all resize-none"
+                    className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:ring-2 focus:ring-brand-green outline-none transition-all resize-none"
                   ></textarea>
                 </div>
 
-                <button className="w-full bg-blue-600 text-white py-5 rounded-2xl font-bold text-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-100 flex items-center justify-center space-x-2">
+                <button className="w-full bg-brand-green text-white py-5 rounded-2xl font-bold text-lg hover:bg-brand-blue transition-all shadow-xl shadow-brand-green/10 flex items-center justify-center space-x-2">
                   <span>Send Message</span>
                   <Send className="h-5 w-5" />
                 </button>

@@ -20,19 +20,19 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
-              <p className="text-4xl font-black text-blue-600">30+</p>
+              <p className="text-4xl font-black text-brand-green">30+</p>
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mt-2">Years of Service</p>
             </div>
             <div>
-              <p className="text-4xl font-black text-blue-600">15+</p>
+              <p className="text-4xl font-black text-brand-green">15+</p>
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mt-2">Enterprises</p>
             </div>
             <div>
-              <p className="text-4xl font-black text-blue-600">50k+</p>
+              <p className="text-4xl font-black text-brand-green">50k+</p>
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mt-2">Active Members</p>
             </div>
             <div>
-              <p className="text-4xl font-black text-blue-600">100%</p>
+              <p className="text-4xl font-black text-brand-green">100%</p>
               <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mt-2">Coop Owned</p>
             </div>
           </div>
@@ -47,8 +47,8 @@ const Home = () => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-bold text-blue-600 uppercase tracking-[0.2em] mb-4">Testimonials</h2>
-            <h3 className="text-4xl font-extrabold text-blue-900">What Our Community Says</h3>
+            <h2 className="text-sm font-bold text-brand-blue uppercase tracking-[0.2em] mb-4">Testimonials</h2>
+            <h3 className="text-4xl font-extrabold text-brand-green">What Our Community Says</h3>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -81,9 +81,9 @@ const Home = () => {
                 className="bg-gray-50 p-8 rounded-3xl border border-gray-100"
               >
                 <div className="flex items-center space-x-4 mb-6">
-                  <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full border-2 border-blue-100" referrerPolicy="no-referrer" />
+                  <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full border-2 border-brand-green/20" referrerPolicy="no-referrer" />
                   <div>
-                    <p className="font-bold text-blue-900">{testimonial.name}</p>
+                    <p className="font-bold text-brand-blue">{testimonial.name}</p>
                     <p className="text-xs text-gray-500 font-medium">{testimonial.role}</p>
                   </div>
                 </div>

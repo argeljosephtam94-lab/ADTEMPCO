@@ -6,8 +6,8 @@ const serviceDetails = [
     id: "coopmart",
     title: "Coopmart (Retail)",
     icon: ShoppingBag,
-    color: "text-blue-600",
-    bgColor: "bg-blue-50",
+    color: "text-brand-green",
+    bgColor: "bg-brand-green/10",
     description: "Our retail arm provides high-quality groceries, fresh produce, and household essentials at competitive prices. We prioritize local sourcing to support our community farmers.",
     features: ["Fresh Produce Daily", "Fair Pricing", "Member Discounts", "Local Sourcing"],
     image: "https://picsum.photos/seed/grocery/800/600"
@@ -16,8 +16,8 @@ const serviceDetails = [
     id: "hospitality",
     title: "Hospitality & Lodging",
     icon: Bed,
-    color: "text-green-600",
-    bgColor: "bg-green-50",
+    color: "text-brand-blue",
+    bgColor: "bg-brand-blue/10",
     description: "Experience warm hospitality at our hostel and event spaces. Perfect for travelers, business meetings, and community celebrations with modern amenities and heart-driven service.",
     features: ["Clean & Modern Rooms", "Event Spaces", "Free WiFi", "Central Location"],
     image: "https://picsum.photos/seed/lodging/800/600"
@@ -36,8 +36,8 @@ const serviceDetails = [
     id: "business",
     title: "Business Services",
     icon: Briefcase,
-    color: "text-yellow-600",
-    bgColor: "bg-yellow-50",
+    color: "text-brand-blue",
+    bgColor: "bg-brand-blue/10",
     description: "We provide professional business support services including printing, design, and logistics to help local entrepreneurs grow their ventures.",
     features: ["Printing & Design", "Logistics Support", "Business Consulting", "Member Perks"],
     image: "https://picsum.photos/seed/office/800/600"
@@ -53,7 +53,7 @@ const ServicesPage = () => {
       className="bg-white"
     >
       {/* Header */}
-      <section className="bg-green-600 py-24 text-white relative overflow-hidden">
+      <section className="bg-brand-green py-24 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:40px_40px]"></div>
         </div>
@@ -63,7 +63,7 @@ const ServicesPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-7xl font-black mb-6"
           >
-            Our Services
+            Our Enterprises
           </motion.h1>
           <p className="text-xl text-green-50 max-w-2xl mx-auto leading-relaxed">
             A diverse ecosystem of enterprises designed to serve every aspect of your daily life with quality and care.
@@ -85,7 +85,7 @@ const ServicesPage = () => {
                 <div className={`${service.bgColor} p-4 rounded-2xl w-fit mb-8`}>
                   <service.icon className={`h-10 w-10 ${service.color}`} />
                 </div>
-                <h2 className="text-4xl font-extrabold text-blue-900 mb-6">{service.title}</h2>
+                <h2 className="text-4xl font-extrabold text-brand-green mb-6">{service.title}</h2>
                 <p className="text-lg text-gray-600 leading-relaxed mb-8">
                   {service.description}
                 </p>
@@ -97,7 +97,7 @@ const ServicesPage = () => {
                     </li>
                   ))}
                 </ul>
-                <button className={`inline-flex items-center justify-center px-8 py-4 rounded-2xl font-bold text-white shadow-xl transition-all hover:scale-105 ${service.id === 'coopmart' ? 'bg-blue-600 shadow-blue-100' : service.id === 'hospitality' ? 'bg-green-600 shadow-green-100' : service.id === 'distribution' ? 'bg-red-600 shadow-red-100' : 'bg-yellow-600 shadow-yellow-100'}`}>
+                <button className={`inline-flex items-center justify-center px-8 py-4 rounded-2xl font-bold text-white shadow-xl transition-all hover:scale-105 ${service.id === 'coopmart' ? 'bg-brand-green shadow-brand-green/20' : service.id === 'hospitality' ? 'bg-brand-blue shadow-brand-blue/20' : service.id === 'distribution' ? 'bg-red-600 shadow-red-100' : 'bg-brand-blue shadow-brand-blue/20'}`}>
                   Inquire Now
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </button>

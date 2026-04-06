@@ -18,13 +18,13 @@ const Hero = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="space-y-8"
           >
-            <div className="inline-flex items-center space-x-2 bg-blue-50 border border-blue-100 px-4 py-2 rounded-full">
-              <span className="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">Serving Communities with Heart</span>
+            <div className="inline-flex items-center space-x-2 bg-brand-green/10 border border-brand-green/20 px-4 py-2 rounded-full">
+              <span className="flex h-2 w-2 rounded-full bg-brand-green animate-pulse"></span>
+              <span className="text-xs font-bold text-brand-green uppercase tracking-wider">Serving Communities with Heart</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-extrabold text-blue-900 leading-[1.1] tracking-tight">
-              Your One-Stop <span className="text-green-600">Community</span> Enterprise
+            <h1 className="text-5xl md:text-7xl font-extrabold text-brand-green leading-[1.1] tracking-tight">
+              Your One-Stop <span className="text-brand-blue">Community</span> Enterprise
             </h1>
             
             <p className="text-xl text-gray-600 leading-relaxed max-w-xl">
@@ -35,33 +35,33 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link
                 to="/services"
-                className="group inline-flex items-center justify-center bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-200"
+                className="group inline-flex items-center justify-center bg-brand-green text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-brand-blue transition-all shadow-xl shadow-brand-green/20"
               >
                 Explore Services
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/branches"
-                className="inline-flex items-center justify-center bg-white text-blue-900 border-2 border-blue-100 px-8 py-4 rounded-xl font-bold text-lg hover:border-blue-600 transition-all"
+                className="inline-flex items-center justify-center bg-white text-brand-green border-2 border-brand-green/10 px-8 py-4 rounded-xl font-bold text-lg hover:border-brand-blue transition-all"
               >
-                <MapPin className="mr-2 h-5 w-5 text-blue-600" />
+                <MapPin className="mr-2 h-5 w-5 text-brand-green" />
                 Find a Branch
               </Link>
             </div>
 
             <div className="flex items-center space-x-8 pt-8 border-t border-gray-200">
               <div>
-                <p className="text-3xl font-bold text-blue-900">30+</p>
+                <p className="text-3xl font-bold text-brand-green">30+</p>
                 <p className="text-sm text-gray-500 font-medium">Years of Service</p>
               </div>
               <div className="w-px h-10 bg-gray-200"></div>
               <div>
-                <p className="text-3xl font-bold text-blue-900">15+</p>
+                <p className="text-3xl font-bold text-brand-green">15+</p>
                 <p className="text-sm text-gray-500 font-medium">Local Branches</p>
               </div>
               <div className="w-px h-10 bg-gray-200"></div>
               <div>
-                <p className="text-3xl font-bold text-blue-900">50k+</p>
+                <p className="text-3xl font-bold text-brand-green">50k+</p>
                 <p className="text-sm text-gray-500 font-medium">Happy Members</p>
               </div>
             </div>
@@ -80,20 +80,28 @@ const Hero = () => {
                 className="w-full h-auto object-cover"
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-green/40 to-transparent"></div>
             </div>
             
             {/* Floating Elements */}
-            <div className="absolute -top-6 -right-6 bg-yellow-400 p-6 rounded-2xl shadow-xl z-20 animate-bounce-slow">
-              <Heart className="h-8 w-8 text-blue-900" />
+            <div className="absolute -top-10 -right-10 bg-white p-4 rounded-2xl shadow-2xl z-20 animate-bounce-slow border border-gray-100">
+              <img 
+                src="https://storage.googleapis.com/ai-studio-static/adtempco-logo.png" 
+                alt="ADTEMPCO Logo" 
+                className="h-16 w-auto object-contain"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            <div className="absolute -top-6 -right-20 bg-brand-green p-4 rounded-2xl shadow-xl z-20 animate-bounce-slow delay-150">
+              <Heart className="h-6 w-6 text-white" />
             </div>
             <div className="absolute -bottom-10 -left-10 bg-white p-6 rounded-2xl shadow-xl z-20 flex items-center space-x-4 border border-gray-100">
-              <div className="bg-green-100 p-3 rounded-full">
-                <ArrowRight className="h-6 w-6 text-green-600" />
+              <div className="bg-brand-green/10 p-3 rounded-full">
+                <ArrowRight className="h-6 w-6 text-brand-green" />
               </div>
               <div>
                 <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">New Enterprise</p>
-                <p className="text-lg font-bold text-blue-900">Coopmart Express</p>
+                <p className="text-lg font-bold text-brand-green">Coopmart Express</p>
               </div>
             </div>
           </motion.div>
